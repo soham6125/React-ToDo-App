@@ -4,7 +4,7 @@
 }
 
 .container {
-  background: linear-gradient(to right bottom, #e1b382, #c89666);
+  background: linear-gradient(to right bottom, #cc2b5e, #753a88);
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -13,8 +13,9 @@
 }
 
 .app-wrapper {
-  background-color: #12343b;
-  min-width: 450px;
+  box-shadow: 0 10px 10px black;
+  background-color: white;
+  min-width: 600px;
   min-height: 650px;
   width: 400px;
   padding: 30px;
@@ -24,40 +25,107 @@
   margin-bottom: 10px;
 }
 
+/* todo app heading */
 .header h1 {
-  color: #ffff;
+  color: black;
   text-align: center;
   margin: 20px 0px;
 }
 
+/* input field for todo */
 .task-input {
-  outline: none;
-  width: 240px;
-  padding: 10px;
-  margin-right: 25px;
-  font-size: 20px;
-  color: #ccc;
-  background-color: #000000;
-  border: 1px solid #c89666;
-  border-radius: 10px;
+  font-family: inherit;
+  margin-bottom: 5px;
+  width: 420px;
+  border: 0;
+  border-bottom: 2px solid gray;
+  outline: 0;
+  font-size: 1.3rem;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
 }
 
+/* add todo button */
 .button-add {
-  width: 100px;
-  padding: 13px 13px;
-  font: 20px;
-  border-radius: 10px;
-  border: 0;
-  background-color: #f1af71;
+  margin-left: 10px;
+  width: 110px;
+  height: 40px;
+  border: none;
+  outline: none;
+  background: #2f2f2f;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 40px;
+  text-align: center;
+  box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+  position: relative;
+  overflow: hidden;
   cursor: pointer;
 }
 
 .list-item {
-  display: flex;
+  /* box-shadow: 0 3px 10px   rgb(0 0 0 / 0.2); */
+  box-shadow: 3px 3px 3px 0px rgba(123,67,151,0.75);
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(123,67,151,0.75);
+  -moz-box-shadow: 3px 3px 5px 0px rgba(123,67,151,0.75);  display: flex;
   margin: 20px 0px;
-  break-inside: 1px solid #ccc;
   border-radius: 10px;
-  padding: 10px;
-  max-height: 10p;
-  color: red;
+  padding-top: 0px;
+  padding-left: 14px;
+  padding-bottom: 24px;
+  padding-right: 14px;
+  max-height: 20px;
+}
+
+.check-button, 
+.delete-button {
+  /* margin-bottom: 10px; */
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 28px;
+  border-radius: 50px;
+  padding-bottom: 7px;
+  /* text-shadow: 1px 1px 2px black; */
+}
+
+.check-button {
+  padding-left: 200px;
+  color: #ff6c6c;
+  margin-right: 10px;
+}
+.delete-button {
+  color: lightseagreen;
+}
+
+.buttons {
+  /* border: 2px solid black; */
+  padding-top: 6px;
+}
+
+.complete {
+  text-decoration-style: solid;
+  text-decoration-line: line-through;
+  text-decoration-color: #ff6c6c;
+  opacity: 0.6;
+}
+
+.list {
+  padding-top: 12px;
+  /* border: 2px solid white; */
+  margin-bottom: 5px;
+  width: 220px;
+  /* background-color: #12343b; */
+  /* border: none; */
+  color: black;
+  font-size: 20px;
+  padding-left: 10px;
+  margin-right: 15px;
+}
+
+input:focus, 
+button:focus {
+  outline: none;
 }

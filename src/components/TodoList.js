@@ -21,9 +21,9 @@ const TodoList = (props) => {
     return ( 
         <div>
             {todos.map((todo) => (
-                <div className="list-item" key={todo.id}>
+                <div className='list-item' key={todo.id}>
                     <div className={`list ${todo.completed ? 'complete' : "" }`}>{ todo.title }</div>
-                    <div>
+                    <div className='buttons'>
                         <button className="check-button" onClick={() => handleComplete(todo)}>
                             <i className="fas fa-check-circle"></i>
                         </button>
