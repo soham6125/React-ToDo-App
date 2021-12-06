@@ -10,7 +10,6 @@ const Form = (props) => {
         e.preventDefault();
         const new_todo = {id: uuidv4(), title: input, completed: false};
         setTodos([...todos, new_todo]);
-        // console.log(todos);
         setInput('');
     }
 
