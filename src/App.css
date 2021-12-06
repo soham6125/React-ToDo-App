@@ -64,8 +64,8 @@
   cursor: pointer;
 }
 
+/* styling for display component of the todos */
 .list-item {
-  /* box-shadow: 0 3px 10px   rgb(0 0 0 / 0.2); */
   box-shadow: 3px 3px 3px 0px rgba(123,67,151,0.75);
   -webkit-box-shadow: 3px 3px 5px 0px rgba(123,67,151,0.75);
   -moz-box-shadow: 3px 3px 5px 0px rgba(123,67,151,0.75);  display: flex;
@@ -78,9 +78,9 @@
   max-height: 20px;
 }
 
+/* styling for completed and delete button */
 .check-button, 
 .delete-button {
-  /* margin-bottom: 10px; */
   border: none;
   outline: none;
   cursor: pointer;
@@ -88,7 +88,6 @@
   font-size: 28px;
   border-radius: 50px;
   padding-bottom: 7px;
-  /* text-shadow: 1px 1px 2px black; */
 }
 
 .check-button {
@@ -101,10 +100,10 @@
 }
 
 .buttons {
-  /* border: 2px solid black; */
   padding-top: 6px;
 }
 
+/* styling for the state when a todo is marked completed */
 .complete {
   text-decoration-style: solid;
   text-decoration-line: line-through;
@@ -114,11 +113,8 @@
 
 .list {
   padding-top: 12px;
-  /* border: 2px solid white; */
   margin-bottom: 5px;
   width: 220px;
-  /* background-color: #12343b; */
-  /* border: none; */
   color: black;
   font-size: 20px;
   padding-left: 10px;
